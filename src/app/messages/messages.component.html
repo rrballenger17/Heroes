@@ -2,7 +2,7 @@
 
 
 
-<div *ngIf="messageService.messages">
+<div *ngIf="messageService.isEmpty() === false">
 
   <h2>Messages</h2>
   <button class="clear"
@@ -10,3 +10,5 @@
   <div *ngFor="let message of messageService.messages"> {{message}} </div>
 
 </div>
+
+

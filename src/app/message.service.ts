@@ -7,6 +7,10 @@ export class MessageService {
 
     messages: string[] = [];
 
+    isEmpty(): boolean {
+      return this.messages.length === 0;
+    }
+
     add(message: string) {
       this.messages.push(message);
     }

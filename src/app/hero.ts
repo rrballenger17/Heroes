@@ -1,6 +1,6 @@
 
 
-//Hero class
+// Hero class
 
 export class Hero {
   id: number;
